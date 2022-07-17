@@ -1,0 +1,14 @@
+A partir do projeto no Visual Studio:
+
+1) Em Program.cs
+	-> Mude as opcoes de conexao conforme o seu banco de dados
+	-> Mude o nome da Database que será criada como preferir
+	
+2) No console do gerenciador de pacotes NuGet
+	-> Insira estes comandos
+	
+	Add-Migration Criacao -Context Contexto
+	
+	Update-database -Context Contexto
+	
+Os comandos necessarios para criação/migration do banco de dados serão gerados e executados automaticamente pelo MigrationBuilder
