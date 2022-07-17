@@ -12,3 +12,5 @@ A partir do projeto no Visual Studio:
 	Update-database -Context Contexto
 	
 Os comandos necessarios para criação/migration do banco de dados serão gerados e executados automaticamente pelo MigrationBuilder
+
+3) Rode o debug e se divirta
