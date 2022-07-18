@@ -1,16 +1,21 @@
 A partir do projeto no Visual Studio:
 
 1) Em Program.cs
-	-> Mude as opcoes de conexao conforme o seu banco de dados
-	-> Mude o nome da Database que será criada como preferir
-	
-2) No console do gerenciador de pacotes NuGet
-	-> Insira estes comandos
-	
-	Add-Migration Criacao -Context Contexto
-	
-	Update-database -Context Contexto
-	
-Os comandos necessarios para criação/migration do banco de dados serão gerados e executados automaticamente pelo MigrationBuilder
 
-3) Rode o debug e se divirta
+Mude as opcoes de conexão conforme o seu banco de dados postgresql
+	
+2) No console do gerenciador de pacotes NuGet (encontrado no menu de Ferramentas) 
+
+Rode este comando: Update-database -Context Contexto
+	
+Isso irá rodar a migration que está no projeto para a criação da database
+
+!!!
+Caso dê algum tipo de erro, apague a pasta Migrations junto com os arquivos dentro dela e rode este comando: Add-Migration Criacao -Context Contexto
+!!!
+
+Isto irá gerar os comandos para a criação da database
+
+Depois rode o comando de update de novo: Update-database -Context Contexto
+
+3) Rode o debug e teste o projeto
