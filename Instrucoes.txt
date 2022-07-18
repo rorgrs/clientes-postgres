@@ -11,7 +11,7 @@ Rode este comando: Update-database -Context Contexto
 Isso irá rodar a migration que está no projeto para a criação da database
 
 !!!
-Caso dê algum tipo de erro, apague a pasta Migrations junto com os arquivos dentro dela e rode este comando: Add-Migration Criacao -Context Contexto
+Caso dê algum tipo de erro, apague a pasta Migrations junto com os arquivos dentro dela e rode este comando no console do gerenciador de pacotes NuGet: Add-Migration Criacao -Context Contexto
 !!!
 
 Isto irá gerar os comandos para a criação da database
